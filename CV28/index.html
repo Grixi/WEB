@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Media Queries Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Helvetica, 'Helvetica Neue', sans-serif;
+            background-color: #ccc;
+        }
+        
+        img {
+            /* DOPLNTE ZDE TAK, ABY SE DOBRE ZOBRAZOVALY OBRAZKY*/
+        }
+        
+        #main {
+            background-color: #fff;
+            width: 80%;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            padding: 0;
+        }
+        
+        section h2 {
+            height: 30px;
+        }
+        
+        section {
+            float: right;
+            width: 78%;
+            padding: 0 1%;
+            position: relative;
+        }
+        
+        article.ordinary {
+            float: left;
+            width: 24%;
+            padding: 2%;
+            background-color: #ffff99;
+            margin: 0 1% 1% 0;
+            clear: right;
+        }
+        
+        article.featured {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            width: 38%;
+            padding: 2% 2% 10% 2%;
+            background-color: #ffff00;
+        }
+        
+        article.featured img {
+            display: none;
+        }
+        
+        article.odd {
+            clear: left;
+        }
+        
+        aside {
+            float: left;
+            width: 18%;
+            padding: 1%;
+            background-color: #ddd;
+        }
+        
+        footer {
+            clear: both;
+        }
+        /* DOPLNTE MEDIA QUERIES, ABY SE WEB ZOBRAZOVAL DOBRE NA TABLETECH A MOBILECH, PRIDEJTE I TISKOVOU VERZI*/
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <h1>My Blog</h1>
+        </header>
+        <section>
+            <h2>Recent Articles</h2>
+            <article class="ordinary odd">
+                <h3>Headline 1</h3>
+                <img src="building.jpg">
+                <p>Ea delenit ut iaceo quidem. Duis transverbero blandit tation te minim commoveo t.</p>
+            </article>
+            <article class="ordinary even">
+                <h3>Headline 2</h3>
+                <img src="building.jpg">
+                <p>Hendrerit secundum minim incassum valde vicis autem te. Comis capto feugiat wisi.</p>
+            </article>
+            <article class="ordinary odd">
+                <h3>Headline 3</h3>
+                <img src="building.jpg">
+                <p>Te iriure in indoles blandit et epulae erat mos delenit nisl. Wisi aliquip susci.</p>
+            </article>
+            <article class="featured">
+                <h3>Headline 4</h3>
+                <img src="building.jpg">
+                <p>Ea delenit ut iaceo quidem. Duis transverbero blandit tation te minim commoveo.</p>
+            </article>
+            <article class="ordinary even">
+                <h3>Headline 5</h3>
+                <img src="building.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed orci sollicit.</p>
+            </article>
+        </section>
+        <aside>
+            <h2>Subscribe</h2>
+            <p>Sign up now to receive updates as we post new content:</p>
+            <input type="email" name="join" placeholder="email">
+        </aside>
+        <footer>
+            <p>Best. Blog. Ever.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
