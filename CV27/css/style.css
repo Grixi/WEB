@@ -13,12 +13,6 @@ font-family: 'Hammersmith One', sans-serif;
   background-color: black;
 }
 
-.header {
-  padding: 60px;
-  text-align: center;
-  background: #fefefe;
-  color: #000000;
-}
 
 
 .navbar {
@@ -26,18 +20,7 @@ font-family: 'Hammersmith One', sans-serif;
   background-color: #000000;
 }
 
-.navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-}
 
-
-.navbar a:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
 
 .row {
   display: flex;
@@ -57,17 +40,9 @@ font-family: 'Hammersmith One', sans-serif;
   padding: 20px;
 }
 
-.img {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
 
 
-.footer {
-  text-align: center;
-  background: #ffffff;
-}
+
 
 .tsm-logo {
   width: 10%;
