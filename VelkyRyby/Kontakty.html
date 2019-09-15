@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="obchood velký ryby" />
+
+  <title>Velký Ryby</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo/velkyrybylogo.png">
+</head>
+
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="black" stroke-width="2" />
+          <path d="M0,14 30,14" stroke="black" stroke-width="2" />
+          <path d="M0,23 30,23" stroke="black" stroke-width="2" />
+        </svg>
+      </a>
+    </span>
+
+    <img id="mobile-logo" src="img/logo/velkyrybylogo.svg">
+    <ul class="navbar-nav">
+      <li><a href="Ryby.html">RYBY</a></li>
+      <li><img class="slash" src="img/logo/slash.svg"></li>
+      <li><a href="Sushi.html">SUSHI</a></li>
+      <img onclick="window.location.href='index.html'" class="web-logo" src="img/logo/velkyrybylogo.svg">
+      <li><a href="Recepty.html">RECEPTY</a></li>
+      <li><img class="slash" src="img/logo/slash.svg"></li>
+      <li><a href="Kontakty.html">KONTAKT</a></li>
+    </ul>
+  </nav>
+
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="Ryby.html">RYBY</a>
+    <a href="Sushi.html">SUSHI</a>
+    <a href="Recepty.html">RECEPTY</a>
+    <a href="Kontatky.html">KONTAKT</a>
+  </div>
+
+  <div id="main">
+    <h1>KONTAKTNÍ FORMULÁŘ</h1>
+    <form class="contact-form" action="script/contactform.php" method="post">
+      <input type="text" name="name" placeholder="Jméno a příjmení">
+      <input type="text" name="mail" placeholder="Váš e-mail">
+      <input type="text" name="telefon" placeholder="Telefoní číslo">
+      <textarea id="subject" name="subject" placeholder="Obejdnávka"></textarea>
+      <div class="button"><input type="submit" name="submit"></input></div>
+    </form>
+  </div>
+  <footer>
+    <ul>
+      <li>Velký ryby s.r.o.</li>
+      <li>Spálená 86/9,</li>
+      <li>110 00 Praha 1 – Nové Město</li>
+      <li>DIČ: CZ 06869947</li>
+      <a href="https://www.facebook.com/velkyryby.cz/"><img class="footer-icon" src="img/logo/facebook.svg"></a>
+      <li>Telefon: 724-340-000</li>
+      <li>E-mail: info@velkyryby.cz</li>
+    </ul>
+
+  </footer>
+<script src="script/script.js"></script>
+</body>
+
+</html>

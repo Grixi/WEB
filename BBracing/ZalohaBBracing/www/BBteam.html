@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<!--
+	Telephasic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+		<link rel="icon" href="images/BBRlogo.png">
+	<head>
+		<title>BB bikers</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+			
+			<script> vid = document.getElementById("bgvid");
+				var pauseButton = document.querySelector("#polina button");
+
+				if (window.matchMedia('(prefers-reduced-motion)').matches) {
+					vid.removeAttribute("autoplay");
+					vid.pause();
+					pauseButton.innerHTML = "Paused";
+				}
+
+				function vidFade() {
+				vid.classList.add("stopfade");
+				}
+
+				vid.addEventListener('ended', function()
+				{
+				// only functional if "loop" is removed 
+				vid.pause();
+				// to capture IE10
+				vidFade();
+				}); 
+
+
+				pauseButton.addEventListener("click", function() {
+				vid.classList.toggle("stopfade");
+				if (vid.paused) {
+					vid.play();
+					pauseButton.innerHTML = "Pause";
+				} else {
+					vid.pause();
+					pauseButton.innerHTML = "Paused";
+				}
+				})</script>
+			<!-- Header -->
+				<div id="header-wrapper">
+					
+					<div id="header" class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">BB bikers</a></h1>
+
+						<!-- Nav -->
+
+
+						
+
+						
+
+						<nav id="nav">
+							<ul>
+								<li>
+									<a href="#">Menu</a>
+									<ul>
+										<li><a href="filozofie.html">Filozofie</a></li>
+										<li><a href="BBteam.html">BB team</a></li>
+										<li><a href="soustredeni.html">Soustředění</a></li>
+										<li>
+											<a href="#">Zajímavé články</a>
+											<ul>
+												<li><a href="pdf/Jak motivovat dítě ke sportu aneb rodičovská alchymie.pdf">Jak motivovat dítě ke sportu aneb rodičovská alchymie</a></li>
+												<li><a href="pdf/Jak správně vybrat pro dítě nové kolo.pdf">Jak správně vybrat pro dítě nové kolo</a></li>
+												<li><a href="pdf/Jak vybrat správnou cyklosedačku.pdf">Jak vybrat správnou cyklosedačku</a></li>
+												<li><a href="pdf/Jak vzbudit u dítěte vztah ke kolu final.pdf">Jak vzbudit u dítěte vztah ke kolu</a></li>
+												<li><a href="pdf/Rychleby.pdf">Tip na cyklovýlet Rychleby</a></li>
+												<li><a href="pdf/Tip na cyklovýlet Líšno.pdf">Tip na cyklovýlet Líšno</a></li>
+											</ul>
+										</li>
+										<li><a href="akce.html">Akce</a></li>
+									</ul>
+								</li>
+								<li><a href="prihlaska.html">Přihláška</a></li>
+								<li class="break"><a href="coajak.html">Co a jak</a></li>
+								<li><a href="kontakt.html">Kontakt</a></li>
+							</ul>
+						</nav>
+
+					</div>
+
+					<!-- Hero -->
+						<section id="hero" class="container">
+							<header>
+								<h2>BB team
+                
+								
+								
+							</header>
+						
+							
+							<ul class="actions">
+								
+							</ul>
+						</section>
+						
+				</div>
+
+			<!-- Features 1 -->
+				<div class="wrapper">
+					<div class="container">
+						<div class="row">
+                                <h2>Vedení</h2>
+                           
+                              
+                                
+                                <div class="row">
+                                  <div class="column">
+                                    <div class="card">
+                                      <img src="images/Tompa.jpg" alt="Jane" style="width:100%" >
+                                      <div class="container">
+                                        <h2 style="color:white;">TOMPO</h2>
+                                        <p class="title">trenér a manager týmu v jedné osobě</p>
+                                        <p style="width:27%;">Tomáš Povolný je nejdokonalejší týmový předseda pod sluncem. Oddíl je jeho velká láska a na všem, co pro něj dělá, je to znát. Dokáže zařídit nemožné a hýčká si trenéry i sportovce.  Prožil nezapomenutelné dětství  na vsi v Čerčanech v době, kdy se ještě děti pohybovaly samostatně terénem a dopřávaly si dobrodružství na vlastní kůži,  do dospělosti se doslova radostně prosportoval a chce to samé dopřát nejen svým vlastním dětem, ale všem, co o to mají zájem. Zkrátka: co nezařídí Tompo, nezařídí už nikdo!</p>
+                                        <p></p>
+                                      
+                                      </div>
+                                    </div>
+                                  </div>
+                                
+                                  <div class="column">
+                                    <div class="card">
+                                      <img src="images/Madla.jpg" alt="Mike" style="width:100%">
+                                      <div class="container">
+                                        <h2 style="color:white;">MADLA</h2>
+                                        <p class="title">šeftrenérka</p>
+                                        <p style="width:27%;">Magdalena Fantová je absolventka Fakulty tělesné výchovy a sportu a její životní krédo zní: škoda každého dne, kdy jsme si nezasportovali. Tělocvikářka tělem i duší pracuje ve státní správě a dobíjí se sportem.  Trénovaní  dětí je pro ni obrovskou radostí a zdrojem energie.  Má  8letého kluka a 6letou holčičku. Sleduje novinky z oblasti sportovního tréninku a s nadšením je aplikuje na vlastní děti  a oddílové svěřence. </p>
+                                        <p></p>
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                       
+                                      </div>
+                                      <h2>Trenéři</h2>
+                                      <div class="row">
+                                         
+                                            
+                                            <br>
+                                            <div class="column">
+                                              <div class="card">
+                                                <img src="images/Jitka.jpg" alt="Jane" style="width:100%" >
+                                                <div class="container">
+                                                  <h2 style="color:white;">Jíťa</h2>
+                                                  <p class="title">trenérka chůvička, "pravá ruka" týmu</p>
+                                                  <p style="width:27%;">Jitka Hanibalová je ztělesněním dobra na zemi. S dětmi pracuje s neuvěřitelným zápalem, nic ji není zatěžko, všechny úkoly plní na jedničku s hvězdičkou.  Od té doby, co se stará o veškeré oddílové papírování, tak máme konečně ve věcech pořádek! Vyrostla stejně jako Tompo na vsi, v Kozmicích, v partě bikrosáků, hasičů a  fotbalistů a stejně jako Tompo chce tyto  radosti dětství dopřát i dalším dětem, které o to mají zájem a že se jich v naší kotlince našlo! Funguje bezvadně jako chůvička, když Madla předcvičuje a Tompo staví kužely: každá rukavička je na správné ručičce, všechny podolky jsou s láskou zakasané a to vše díky „naší Jítě“, která umí  bezpečně uhasit i ten největší požár </p>
+                                                  <p></p>
+                                                
+                                                </div>
+                                              </div>
+                                            </div>
+                                          
+                                            <div class="column">
+                                              <div class="card">
+                                                <img src="images/Kevin.jpg" alt="Mike" style="width:100%">
+                                                <div class="container">
+                                                  <h2 style="color:white;">Kevin</h2>
+																									<p class="title">mezinárodní posila   </p>
+																									<p class="title">oficiální fotograf týmu </p>
+                                                  <p style="width:27%;">Kevin Stanley je dokonalý anglický gentleman, který ještě k tomu skvěle fotí. Obohacuje děti svou krásnou angličtinou - možná právě díky Kevinovi pochopí děti smysl učit se cizí jazyk dřív než v 18ti letech na prvním samostatném zahraničním zájezdu. Kevin je laskavý oddílový asistent, který miluje kolo a vnáší do našeho oddílu tu správnou mezinárodní přidanou hodnotu  </p>
+                                                  <p></p>
+                                                  
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="column">
+                                                    <div class="card">
+                                                      <img src="images/honza.jpg" alt="Mike" style="width:100%">
+                                                      <div class="container">
+                                                        <h2 style="color:white;">Honzík</h2>
+                                                        <p class="title"> budoucnost oddílu</p>
+                                                        <p style="width:27%;">Honza Tretera snižuje náš věkový průměr a vnáší čerstvý vítr do našich řad. Student, sportovec intelektuál, který je mentálně o několik let vepředu, pomáhá krotit malé divochy a funguje jako zdatný tlumočník z angličtiny. Honzík je naše budoucnost, kéž  by takových mladých lidí bylo víc! </p>
+                                                        <p></p>
+                                                        
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                 
+                                    </div>
+                                  </div>
+                                 
+                                </div>
+                               
+                        </div>
+                        
+                    </div>
+                    
+				</div>
+
+			<!-- Promo -->
+			<div id="footer" class="container">
+				<header class="major">
+					
+				
+                </header>
+                
+
+
+
+				<div class="row">
+				
+				
+				</div>
+			</div>
+		
+
+			<!-- Features 2 -->
+			
+		
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+                    
+                </br>
+                   
+				
+					<div id="copyright" class="container">
+						<ul class="menu">
+							<li>Design: Adam Tretera</li>
+						</ul>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

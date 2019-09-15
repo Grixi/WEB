@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<!--
+	Telephasic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+		<link rel="icon" href="images/BBRlogo.png">
+	<head>
+		<title>BB bikers</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+			
+			<script> vid = document.getElementById("bgvid");
+				var pauseButton = document.querySelector("#polina button");
+
+				if (window.matchMedia('(prefers-reduced-motion)').matches) {
+					vid.removeAttribute("autoplay");
+					vid.pause();
+					pauseButton.innerHTML = "Paused";
+				}
+
+				function vidFade() {
+				vid.classList.add("stopfade");
+				}
+
+				vid.addEventListener('ended', function()
+				{
+				// only functional if "loop" is removed 
+				vid.pause();
+				// to capture IE10
+				vidFade();
+				}); 
+
+
+				pauseButton.addEventListener("click", function() {
+				vid.classList.toggle("stopfade");
+				if (vid.paused) {
+					vid.play();
+					pauseButton.innerHTML = "Pause";
+				} else {
+					vid.pause();
+					pauseButton.innerHTML = "Paused";
+				}
+				})</script>
+			<!-- Header -->
+				<div id="header-wrapper">
+					
+					<div id="header" class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">BB bikers</a></h1>
+
+						<!-- Nav -->
+
+
+						
+
+						
+
+						<nav id="nav">
+							<ul>
+								<li>
+									<a href="#">Menu</a>
+									<ul>
+										<li><a href="filozofie.html">Filozofie</a></li>
+										<li><a href="BBteam.html">BB team</a></li>
+										<li><a href="soustredeni.html">Soustředění</a></li>
+										<li>
+											<a href="#">Zajímavé články</a>
+											<ul>
+												<li><a href="pdf/Jak motivovat dítě ke sportu aneb rodičovská alchymie.pdf">Jak motivovat dítě ke sportu aneb rodičovská alchymie</a></li>
+												<li><a href="pdf/Jak správně vybrat pro dítě nové kolo.pdf">Jak správně vybrat pro dítě nové kolo</a></li>
+												<li><a href="pdf/Jak vybrat správnou cyklosedačku.pdf">Jak vybrat správnou cyklosedačku</a></li>
+												<li><a href="pdf/Jak vzbudit u dítěte vztah ke kolu final.pdf">Jak vzbudit u dítěte vztah ke kolu</a></li>
+												<li><a href="pdf/Rychleby.pdf">Tip na cyklovýlet Rychleby</a></li>
+												<li><a href="pdf/Tip na cyklovýlet Líšno.pdf">Tip na cyklovýlet Líšno</a></li>
+											</ul>
+										</li>
+										<li><a href="akce.html">Akce</a></li>
+									</ul>
+								</li>
+								<li><a href="prihlaska.html">Přihláška</a></li>
+								<li class="break"><a href="coajak.html">Co a jak</a></li>
+								<li><a href="kontakt.html">Kontakt</a></li>
+							</ul>
+						</nav>
+
+					</div>
+
+					<!-- Hero -->
+						<section id="hero" class="container">
+							<header>
+								<h2>Akce
+								
+								
+							</header>
+						
+							
+							<ul class="actions">
+								
+							</ul>
+						</section>
+						
+				</div>
+
+			<!-- Features 1 -->
+				<div class="wrapper">
+					<div class="container">
+						<div class="row">
+							
+						</div>
+					</div>
+				</div>
+
+			<!-- Promo -->
+			<div id="footer" class="container">
+				<header class="major">
+					
+				
+				</header>
+				<div class="row">
+				
+				
+				</div>
+			</div>
+		
+
+			<!-- Features 2 -->
+			
+		
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<h3 class="pr">Bližší info o závodech a jiných akcí naleznete </h3>
+					<ul style="margin-left:7%; font-size:130%; color:#ff3333;list-style-type: circle;">
+
+					
+					<li><a href="http://bb.cesyk.cz/">ČESYK</a></li>
+					<li><a href="http://bike3000.cz/">Bike 3000</a></li></ul>
+                    <h3 class="pr">nebo na našich fecbookových strankách <a href="https://www.facebook.com/detskatour/">zde</a></h3>
+                    
+                </br>
+                   
+				
+					<div id="copyright" class="container">
+						<ul class="menu">
+							<li>Design: Adam Tretera</li>
+						</ul>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

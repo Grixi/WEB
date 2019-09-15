@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="obchood velký ryby" />
+
+  <title>Velký Ryby</title>
+  <link rel="icon" href="img/logo/velkyrybylogo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="black" stroke-width="2" />
+          <path d="M0,14 30,14" stroke="black" stroke-width="2" />
+          <path d="M0,23 30,23" stroke="black" stroke-width="2" />
+        </svg>
+      </a>
+    </span>
+
+    <img id="mobile-logo" src="img/logo/velkyrybylogo.svg">
+    <ul class="navbar-nav">
+      <li><a href="Ryby.html">RYBY</a></li>
+      <li><img class="slash" src="img/logo/slash.svg"></li>
+      <li><a href="Sushi.html">SUSHI</a></li>
+      <img onclick="window.location.href='index.html'" class="web-logo" src="img/logo/velkyrybylogo.svg">
+      <li><a href="Recepty.html">RECEPTY</a></li>
+      <li><img class="slash" src="img/logo/slash.svg"></li>
+      <li><a href="Kontakty.html">KONTAKT</a></li>
+
+    </ul>
+  </nav>
+  <style>
+
+
+  </style>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="Ryby.html">RYBY</a>
+    <a href="Sushi.html">SUSHI</a>
+    <a href="Recepty.html">RECEPTY</a>5
+    <a href="Kontatky.html">KONTAKT</a>
+
+  </div>
+
+  <div id="main">
+    <h1>VELKÝ RYBY</h1>
+    <h4>NEJČERSTVĚJŠÍ RYBY VE MESTĚ</h4>
+  </div>
+  <div class="container">
+    <a data-scroll href="#full">
+      <div class="arrow"></div>
+    </a>
+  </div>
+    <div class="onas">
+        <div class="text-onas">
+          <h2 id="full">FISH & TYRŠ</h2>
+          <p class="p-onas">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pellentesque quam vel velit. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Etiam commodo dui eget wisi. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec iaculis gravida nulla. Fusce suscipit libero eget elit. Proin in tellus sit amet nibh dignissim sagittis. Nunc dapibus tortor vel mi dapibus sollicitudin. Etiam
+          egestas wisi a erat. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+        </div>
+
+          <div class="fixed-bg "></div>
+
+
+    </div>
+
+  <footer>
+    <h1 class="kontakt-nadpis">Kontakty</h1>
+    <div class="flex-container">
+
+      <div>
+              <svg version="1.1" id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+              <style type="text/css">
+              	.st0{stroke:#0e0e0e;;stroke-miterlimit:10;}
+              	.st1{fill:#f1f1f1;}
+              </style>
+              <circle class="st0" cx="100" cy="100" r="97.5"/>
+              <path class="st1" d="M155.71,46.67l-23.97-5.53c-2.6-0.6-5.28,0.76-6.34,3.2l-11.06,25.81c-0.97,2.26-0.32,4.91,1.59,6.45
+              	l13.97,11.43c-8.3,17.68-22.79,32.38-40.84,40.84l-11.43-13.97c-1.57-1.91-4.19-2.56-6.45-1.59l-25.81,11.06
+              	c-2.47,1.08-3.83,3.76-3.23,6.36l5.53,23.97c0.58,2.49,2.79,4.29,5.39,4.29c59.02,0,106.94-47.82,106.94-106.94
+              	C159.99,49.48,158.22,47.25,155.71,46.67z"/>
+              </svg>
+              <p>724-340-000</p>
+      </div>
+      <div>
+            <svg version="1.1" id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+            <style type="text/css">
+            	.st0{stroke:#0e0e0e;;stroke-miterlimit:10;}
+            	.st1{fill:#f1f1f1;}
+            </style>
+            <circle class="st0" cx="100" cy="100" r="97.5"/>
+            <path class="st1" d="M152.81,88.73c0.84-0.7,2.08-0.05,2.08,1.06v46.33c0,6-4.61,10.88-10.3,10.88H55.3
+            	c-5.69,0-10.3-4.87-10.3-10.88V89.82c0-1.13,1.22-1.77,2.08-1.06c4.81,3.94,11.18,8.95,33.08,25.74
+            	c4.53,3.49,12.17,10.83,19.79,10.78c7.66,0.07,15.45-7.43,19.81-10.78C141.65,97.7,148,92.67,152.81,88.73z M99.95,118
+            	c4.98,0.09,12.15-6.62,15.75-9.38c28.48-21.82,30.65-23.72,37.22-29.16c1.24-1.02,1.97-2.61,1.97-4.28v-4.3
+            	c0-6-4.61-10.88-10.3-10.88H55.3C49.61,60,45,64.87,45,70.88v4.3c0,1.68,0.73,3.24,1.97,4.28c6.57,5.41,8.74,7.34,37.22,29.16
+            	C87.8,111.38,94.97,118.09,99.95,118L99.95,118z"/>
+            </svg>
+            <p>info@velkyryby.cz</p>
+      </div>
+      <div>
+          <svg version="1.1" id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+          <style type="text/css">
+          	.st0{stroke:#0e0e0e;;stroke-miterlimit:10;}
+          	.st1{fill:#f1f1f1;}
+          </style>
+          <circle class="st0" cx="100" cy="100" r="97.5"/>
+          <path class="st1" d="M120.5,62.42H132v-18.6c-1.98-0.25-8.81-0.82-16.75-0.82C98.66,43,87.3,52.69,87.3,70.49v16.38H69v20.79h18.3
+          	V160h22.43v-52.33h17.56l2.79-20.79h-20.36V72.55C109.74,66.54,111.48,62.42,120.5,62.42L120.5,62.42z"/>
+          </svg>
+          <p>Velkyryby.cz</p>
+
+      </div>
+    </div>
+
+    <ul>
+      <li>Velký ryby s.r.o.</li>
+      <li>Spálená 86/9,</li>
+      <li>110 00 Praha 1 – Nové Město</li>
+      <li>DIČ: CZ 06869947</li>
+
+    </ul>
+
+  </footer>
+<script src="script/script.js"></script>
+</body>
+
+</html>

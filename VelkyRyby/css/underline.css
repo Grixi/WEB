@@ -1,0 +1,22 @@
+.underline{
+  width: 10%;
+  height: 1px;
+  stroke: black;
+  stroke-width: 2px;
+  transition: all 0.5s;
+  stroke-dasharray: 0, 21;
+  stroke-dashoffset: -20;
+}
+
+li:hover ~ .underline{
+  stroke-dasharray: 40, 0;
+  stroke-dashoffset: 0;
+}
+
+.underlineLabel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}

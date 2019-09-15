@@ -1,0 +1,459 @@
+
+*{
+  padding: 0%;
+  margin: 0%;
+  font-family: Calibri;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: Calibri;
+  background-color:#f1f1f1;
+  overflow-x:hidden;
+}
+body::-webkit-scrollbar {
+    width: 1vh;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0e0e0e;
+
+}
+.navbar{
+  margin-left: 2%;
+  width: 98%;
+  overflow:hidden;
+  text-align: center;
+}
+.navbar li{
+  display:inline;
+}
+
+.navbar a{
+  position: relative;
+  color: #0e0e0e;
+  text-decoration: none;
+}
+.navbar a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #0e0e0e;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before {
+ visibility: visible;
+ -webkit-transform: scaleX(1);
+ transform: scaleX(1);
+}
+
+.navbar a{
+  display:inline-block;
+  color:black;
+  text-align:center;
+  margin-left:2.5%;
+  margin-right: 2.5%;
+  text-decoration:none;
+  font-size:140%;
+  font-weight: 300;
+}
+
+.web-logo{
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 10%;
+  margin-bottom: 1%;
+}
+.navbar ul{
+  margin:8px 0 0 0;
+  list-style:none;
+}
+#main{
+  overflow:hidden;
+  width:100%;
+
+}
+#main h1{
+  text-align:center;
+  font-size: 400%;
+  margin-top: 4%;
+
+}
+#main h4{
+  margin-top: 1%;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 120%;
+}
+.slash{
+  width: 1.1%;
+}
+.sushi{
+  text-align: center;
+  color: #0e0e0e;
+  margin-top: 5%;
+}
+
+.jmeno-sushi{
+  padding-top: 5%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+
+.side-nav{
+  height:100vh;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#000000;
+  opacity:0.97;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+
+.side-nav a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  font-size:22px;
+  color:#ccc;
+  display:block;
+  transition:0.3s;
+}
+
+.side-nav a:hover{
+  color:#fff;
+}
+
+.side-nav .btn-close{
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
+}
+.arrow {
+  box-sizing: border-box;
+  height: 3vw;
+  width: 3vw;
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 2px 2px 0px;
+  transform: rotate(45deg);
+  transition: border-width 0.05s ease-in;
+}
+
+.arrow:hover {
+  border-bottom-width: 3px;
+  border-right-width: 3px;
+}
+.ryby-menu{
+  margin-top: 2%;
+  width:100%;
+  overflow:hidden;
+  text-align: center;text-align: center;
+}
+
+.ryby-menu li{
+  display:inline;
+}
+
+.ryby-menu a{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  position: relative;
+  color: #0e0e0e;
+  text-decoration: none;
+}
+.ryby-main{
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.ryby-jmeno{
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 5%;
+  margin-bottom:0%;
+}
+.ryby-nazev{
+  text-align: center;
+  font-style: italic;
+}
+.ryby-cena{
+  text-align: center;
+}
+.nadpisryby{
+  text-align: center;
+  font-weight: bold;
+  font-size: 200%;
+  margin-top: 5%;
+}
+.container {
+  margin-top: 11%;
+  margin-bottom: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-form{
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 10vh;
+}
+textarea{
+  height: 10vh;
+}
+input[type=text],textarea{
+  width: 50%;
+  padding: 12px;
+  border: 2px solid #251f1f;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 1%;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: Calibri;
+  background-color: #F1f1f1;
+}
+input::placeholder,textarea::placeholder {
+  color:#251f1f;
+}
+.vice {
+  text-align: center;
+}
+.button-ryby{
+  margin-top: 2%;
+  background-color: #0e0e0e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.button{
+  width: 100%;
+}
+input[type=submit] {
+  background-color: #0e0e0e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.7s;
+  font-weight: bold;
+}
+input[type=submit]:hover{
+  background-color: #f3f3f3;
+  color:#0e0e0e;
+  border-style: solid;
+}
+
+.onas {
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/Prodejna/Rybí pult.jpg");
+  -webkit-box-shadow: 0px 2px 33px 4px rgba(0,0,0,0.20);
+  -moz-box-shadow: 0px 2px 33px 4px rgba(0,0,0,0.20);
+  box-shadow: 0px 2px 33px 4px rgba(0,0,0,0.20);
+}
+#main-recepty{
+  margin-top: 5%;
+}
+
+.recepty{
+  background-color:  #f3f3f3;
+  display: flex;
+  flex-flow: row wrap;
+}
+ .recepty h2, h3{
+   margin-top: 5%;
+   margin-bottom: 5%;
+ }
+.recepty-side1{
+  width: 40vw;
+  color: #0e0e0e;
+}
+.recepty-side1 img{
+  width: 90%;
+  margin-top: 10%;
+}
+.recepty-side2{
+  margin-left: 10vw;
+  margin-right: 5vw;
+  width: 35vw;
+}
+.recepty-side2 ul{
+  list-style-type: none;
+}
+
+
+.recepty-nadpis3{
+  margin-bottom: 5%;
+}
+.recepty-nadpis{
+  text-align:center;
+  font-size: 150%;rgba(14, 14, 14, 0.5)
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 200%;
+}
+
+
+  .text-onas{
+    color: #fff;
+    background:rgba(14, 14, 14, 0.85);
+    width: 25%;
+    text-align:center;
+  }
+    .text-onas h2{
+      font-size: 250%;
+      text-align: center;
+      color: #fff;
+      padding-top: 10%;
+    }
+  .p-onas{
+    font-size: 150%;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
+
+
+  footer ul{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    list-style-type: none;
+    font-size: 120%;
+    text-align: center;
+  }
+  .footer-icon{
+    width: 4%;
+    transition: 0.7s;
+    color:#0e0e0e;
+  }
+
+  .flex-container {
+  display: flex;
+  width: 90%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+.flex-container > div {
+  margin-left: 10%;
+  margin-right: 10%;
+  width:10%;
+  transition: 0.7s;
+
+}
+.flex-container > div >p{
+  text-align: center;
+  padding-top: 2%;
+  font-size: 110%;
+  font-weight: bold;
+}
+.kontakt-nadpis{
+  text-align: center;
+  font-size: 250%;
+  padding: 5%;
+}
+
+
+@media(max-width:568px){
+  .navbar-nav{display:none}
+  .arrow{
+    height: 10vw;
+    width: 10vw;
+  }
+  #mobile-logo{
+    width: 22%;
+    padding-top: 2%;
+    padding-left: 35%;
+  }
+  #main h1{
+    font-size: 230%;
+  }
+  #main h4{
+    font-size: 90%;
+  }
+
+
+  .onas {
+    flex-flow: column;
+
+  }
+  .recepty {
+    flex-flow: column;
+  }
+  .recepty-side1{
+    width: 100%;
+    color: #0e0e0e;
+  }
+  .recepty-side1 img{
+    width: 100%;
+  }
+  .recepty-side2{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .text-onas{
+    width: 90%;
+    margin-left: 0%;
+    margin-right: 5%;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  .fixed-bg{
+    width: 100%;
+  }
+  .footer-icon{
+    width: 10%;
+
+  }
+  .recepty-h{
+    width: 100%;}
+  }
+  .text-onas{
+    width: 100%;
+  }
+
+
+
+
+
+@media(min-width:568px){
+  .open-slide{display:none}
+  #mobile-logo{
+    display: none;
+  }
+  .flex-container {
+}
+
+
+}
